@@ -32,7 +32,6 @@ const data = [
 export default function Home() {
   
   const [search, setSearch] = useState("");
-  const [results, setResults] = useState(true);
   
   const searchFilter = (array) => {
     return array.filter(
@@ -41,7 +40,6 @@ export default function Home() {
   }
 
   const filteredData = searchFilter(data);
-  filteredData.length == 0 ? setResults == false : setResults == true;
   
   return(
     <div>
